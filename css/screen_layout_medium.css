@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/* Layout Medium Screens */
+
+
+
+
+header {
+	height: 200px;
+	background: url(../images/banner.jpg) no-repeat 90% 0px ;
+	background-size: 800px 200px
+}
+
+
+
+nav {
+	top: 155px;
+	margin-right: 20px;
+}
+
+
+
+
+@media
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min--moz-device-pixel-ratio: 2),
+	only screen and (-o-min-device-pixel-ratio: 2/1),
+	only screen and (min-device-pixel-ratio: 2),
+	only screen and (min-resolution: 192dpi),
+	only screen and (min-resolution: 2dppx)
+
+

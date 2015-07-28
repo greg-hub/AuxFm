@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+/* Global Content Formatting and Styles */
+
+body{
+	line-height: 1.5em;
+	font-family: Arial;
+	font-size: 14px;
+	background: #000704;
+
+}
+
+.page{
+	max-width: 980px;
+	margin: 0px auto 0px auto;
+	position: relative;
+	background-color: #fff
+}
+
+h1 {
+	color: #9BA0BD;
+	padding-top: 100px; 
+	font-size: 3em;
+	font-family: 'Black Ops One', cursive; 
+	font-weight: normal;  
+	text-shadow: 0 1px 0 black;
+	margin: 0 0 .5em 0;
+	line-height: .1;
+	
+	
+}
+
+h2 {
+	color: #9BA0BD;
+	font-size: 1em; 
+	font-family: 'Black Ops One', cursive;
+	text-shadow: 0 1px 0 black;
+	line-height: .0;
+	
+
+}
+
+h3 {
+	font-size: 1.5em; margin: 0 0 1em 0;
+}
+
+p {
+	margin: 0 0 .75em 0; 
+}
+
+a {
+	color: white;
+}
+
+a:hover {
+	color: gray;
+}
+
+footer {
+	font-size: .85em; 
+	color: #9BA0BD;; 
+	text-align: center;
+	padding: 10px 10px 10px 0px
+}
+
+a.CTA {
+	text-transform: uppercase;
+	font-size: .9em;
+	font-weight: bold;
+	text-decoration: none;
+	margin: .5em 0 0 0;
+	padding: 0px 12 0px 0px;
+	background: url(../images/cta_arrow.png) no-repeat right 0px;
+}
+
+a.CTA:hover {
+	background-position: right -50px;
+}
+
+
+
+nav{
+	color: red;
+	text-align: center;
+	font-family: 'Black Ops One', cursive;
+	letter-spacing: 1px;
+	text-shadow: 0 1px 0 black;
+	padding-right: 10px;
+
+}
+nav a {
+	color:white;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: inline;
+	font-weight: bold;
+	font-size: .9em;
+	
+
+}
+
+nav a:hover{
+	color: gray;
+}
+
+.clear-fix {
+	clear: both;
+	line-height: 1px;
+}
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min--moz-device-pixel-ratio: 2),
+	only screen and (-o-min-device-pixel-ratio: 2/1),
+	only screen and (min-device-pixel-ratio: 2),
+	only screen and (min-resolution: 192dpi),
+	only screen and (min-resolution: 2dppx)
+
+
