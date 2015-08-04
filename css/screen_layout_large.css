@@ -25,11 +25,13 @@ nav{
 
 header{
 	
-	height: 275px;
+	height: 200px;
 	background:  url(../images/banner.jpg) no-repeat right 0px;
 	background-size: 980px 275px;
 	text-align: center;
 }
+
+
 
 
 article {
@@ -39,12 +41,26 @@ article {
 
 
 nav {
-	top: 170px;
+	top: 150px;
 }
 
 nav a {
 	margin: 12px 0px 10px 20px;
 }
+
+.logo	{
+	display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+	margin-bottom: 30px;
+    height: 40%;
+    width: 40%;
+    border-color: gray;
+    border-style: solid;
+    border-width: 3.5px;
+    border-radius: 5px;
+}																							
 
 @media screen and (max-width:990px {
 	footer { padding-left: 20px;}
