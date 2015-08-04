@@ -129,6 +129,57 @@ nav a:hover{
 	text-align: center;
 }
 
+a.tooltip {
+	outline:none; 
+	text-decoration:none;
+} 
+
+a.tooltip strong {
+	line-height:5px;
+} 
+
+a.tooltip:hover {
+	text-decoration:none;
+} 
+
+a.tooltip span { 
+	z-index:5;
+	display:none; 
+	padding:14px 20px; 
+	margin-top:60px; 
+	margin-left:-122px; 
+	width:100px; 
+	line-height:16px; 
+} 
+
+a.tooltip:hover span { 
+	display:inline; 
+	position:absolute; 
+	border:2px 
+	solid #FFF; 
+	color:#EEE; 
+	background:#333  
+} 
+
+.callout {
+	z-index:20;
+	position:absolute;
+	border:0;
+	top:-14px;
+	left:60px;}  
+
+a.tooltip span { 
+	border-radius:1px; 
+	box-shadow: 0px 0px 8px 4px #666; /*opacity: 0.8;*/ 
+}
+
+.icons{
+	text-align: center;
+	margin-top: 30px;
+    margin-bottom: 30px;
+	opacity: 0.7;
+}
+
 	
 
 .clear-fix {
