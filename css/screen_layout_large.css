@@ -16,8 +16,11 @@ nav{
 	width: 100%;
 	display: block;
 	position: absolute;
-	
+}
 
+div#timetable iframe {
+	display: block;
+    margin: 20px auto 20px auto;
 }
 
 /* Layout Large Screens (default for older browsers) */

@@ -180,6 +180,13 @@ a.tooltip span {
 	opacity: 0.7;
 }
 
+div#timetable iframe {
+	display: block;
+    margin: 20px auto 20px auto;
+    
+
+    
+}
 	
 
 .clear-fix {
