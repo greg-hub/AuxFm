@@ -68,8 +68,32 @@ article {
     border-radius: 5px;
 }
 
-footer {
-	border-top: 1px solid #a6ab65;
+/*
+*************
+* =Collective
+*************
+*/
+#gallery ul {
+	display: inline-block;
+}
+
+#gallery li {
+	height: 70px;
+	width: 70px;
+}
+
+}
+
+#djs {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#djs li {
+	float: left;
+	width: 45%;
+	margin: 2.5%
 }
 
 
