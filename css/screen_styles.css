@@ -6,21 +6,23 @@ body{
 	line-height: 1.5em;
 	font-family: Arial;
 	font-size: 14px;
-	background: #000704;
-
+	background-color: #000704;
 }
 
 .page{
 	max-width: 980px;
 	margin: 0px auto 0px auto;
 	position: relative;
-	background-color: #000704;
+	background:#F2F2F2;
 }
 
+
+
+
 header h1 {
-	color: #9BA0BD;
+	color: #fff;
 	padding-top: 100px; 
-	font-size: 3em;
+	font-size: 4em;
 	font-family: 'Black Ops One', cursive; 
 	font-weight: normal;  
 	text-shadow: 0 1px 0 black;
@@ -31,32 +33,47 @@ header h1 {
 }
 
 h2 {
-	color: #9BA0BD;
-	font-size: 1em; 
-	font-family: 'Black Ops One', cursive;
+	color: #000;
+	font-size: 1.5em; 
+	font-family: 'Permanent Marker', cursive;
 	text-shadow: 0 1px 0 black;
 	line-height: .0;
+	text-align: center;
 	
 
 }
 
-h3 {
-	font-size: 1.5em; margin: 0 0 1em 0;
+h3{
+	color: #fff;
+	font-size: 1.6em; 
+	font-family: 'Permanent Marker', cursive;
+	text-shadow: 0 1px 0 white;
+	line-height: .0;
+	text-align: center;
+	color: black;
+	
 }
 
 hr.top {
 	margin: auto;
-	height: 1px;
-	width: 960px;
+	height: 1px; 
+	width: 980px;
 	margin-top: 0px;
 	opacity: 0.8;
-	background: gray;
+	border-color: #505354;
+	background-color: #505354;
 } 
 
 p {
 	margin: 0 0 .75em 0; 
-	color: white;
+	color: #000;
 	text-align: center;
+	font-family: 'NTR', sans-serif;
+	font-size: 1.1em;    
+}
+
+.blog p {
+	margin-top: 10px;
 }
 
 
@@ -65,7 +82,7 @@ a {
 }
 
 a:hover {
-	color: gray;
+	color: #6b6f70;
 }
 
 
@@ -86,12 +103,17 @@ a.CTA:hover {
 
 
 nav{
-	color: red;
+	
 	text-align: center;
+	margin-top: 25px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	position: absolute;
+	background-color: #36434C;
 	font-family: 'Black Ops One', cursive;
 	letter-spacing: 1px;
 	text-shadow: 0 1px 0 black;
-	padding-right: 10px;
+	
 
 }
 nav a {
@@ -100,7 +122,7 @@ nav a {
 	text-decoration: none;
 	display: inline;
 	font-weight: bold;
-	font-size: .9em;
+	font-size: 1.3em;
 	
 
 }
@@ -118,16 +140,119 @@ nav a.selected, nav a:hover {
 	height: 100px;
 }
 
-.info {
-	margin-top: 20px;
-	height: 100%;
+/*
+*************
+* =Blog
+*************
+*/
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+
 
 }
 
-.info h1{
-	color: red;
-	margin-top: 30px;
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+	background-color: white;
+}
+.col:first-child { margin-left: 0px; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF THREE  */
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66.13%; }
+.span_1_of_3 { width: 32.26%; }
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}
+
+/*two rows */
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF TWO  */
+.span_2_of_2 {
+	width: 100%;
+}
+.span_1_of_2 {
+	width: 49.2%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.span_2_of_2, .span_1_of_2 { width: 100%; }
+}
+
+
+.myButton {
+	background-color:transparent;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #407546;
+	display:inline-block;
+	cursor:pointer;
+	color:#969696;
+	font-family:Arial;
+	font-size:15px;
+	padding:8px 20px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+	margin-bottom: 20px;
+}
+.myButton:hover {
+	background-color:transparent;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.genre p{
 	text-align: center;
+	background-color: red;
 }
 
 a.tooltip {
@@ -178,7 +303,7 @@ a.tooltip span {
 	text-align: center;
 	margin-top: 30px;
     margin-bottom: 30px;
-	opacity: 0.7;
+
 }
 
 
@@ -191,11 +316,14 @@ a.tooltip span {
 
 
 footer {
+	
 	font-size: 0.75em;
 	text-align: center;
 	clear: both;
-	padding-top: 30px;
-	color: #ccc;
+	padding-top: 5px;
+	background-color: #36434c;
+	margin: auto auto;
+	width: 980px;
 }
 
 .social-icon {
@@ -236,13 +364,31 @@ img {
 	margin: 2.5%
 }
 
+/*
+*************
+* =listen
+*************
+*/
 
+.listen {
+	margin-top: 20px;
+
+}
+
+.wtb-ew-v1{
+	text-align: center;
+	margin-bottom: 10px;
+}
 
 /*
 *************
 * =Contact
 *************
 */
+
+.contact {
+	margin-top: 20px;
+}
 
 form {
     /* Just to center the form on the page */
@@ -265,7 +411,7 @@ label {
     display: inline-block;
     width: 90px;
     text-align: right;
-    color: white;
+    color: black;
 }
 
 input, textarea {
@@ -308,6 +454,8 @@ button {
        between the labels and their text fields */
     margin-left: .5em;
 }
+
+
 
 @media 
 	only screen and (-webkit-min-device-pixel-ratio: 2),

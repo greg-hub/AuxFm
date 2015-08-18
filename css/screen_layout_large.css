@@ -5,6 +5,7 @@
 body {
 	margin: 0;
 	padding: 0;
+
 }
 
 header a {
@@ -16,6 +17,11 @@ nav{
 	width: 100%;
 	display: block;
 	position: absolute;
+	top: 140px;
+}
+
+nav a {
+	margin: 12px 0px 0px 20px;
 }
 
 div#timetable iframe {
@@ -27,29 +33,22 @@ div#timetable iframe {
 
 
 header{
-	
 	height: 200px;
-	background:  url(../images/banner.jpg) no-repeat right 0px;
-	background-size: 980px 275px;
+	background:  url(../images/banner.jpg)  right 0px;
+	background-size: 100%;
 	text-align: center;
+
 }
 
 
 
 
-article {
-	padding: 60px 20px 10px 20px;
-}
 
 
 
-nav {
-	top: 150px;
-}
 
-nav a {
-	margin: 12px 0px 10px 20px;
-}
+
+
 
 .logo	{
 	display: block;
@@ -74,6 +73,8 @@ nav a {
 #djs li {
 	width: 28.3333%;
 }
+
+
 																							
 
 @media screen and (max-width:990px {

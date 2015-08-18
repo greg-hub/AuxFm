@@ -1,14 +1,8 @@
-<?php
-if($_POST["message"]) {
-    mail("your@email.address", "Form to email message", $_POST["message"], "From: an@email.address");
-}
-?>
-
 <!DOCTYPE HTML>
 <html>
  <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimun-scale=1.0, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, inital-scale=1.0">
 	 <title>Aux Fm</title>
 	 <link rel="stylesheet" type="text/css" href="css/screen_styles.css" />
 	 <link rel="stylesheet" type="text/css" href="css/screen_layout_large.css" />
@@ -23,55 +17,112 @@ if($_POST["message"]) {
 			
 			<header>
 				
-				<h1><a href="#">Aux Fm</a></h1>
-				<h2><a href="#">Processed Beats</a></h2>
+				<h1><a href="index.html">Aux Fm</a></h1>
+				
 			</header>
 
-			<hr class="top">
+		
 			
 						<nav>
-							<a href="index.html">Home</a>
+							<a href="index.html" class="selected">Home</a>
 							<a href="listen.html">Listen</a>
 							<a href="timetable.html">Timetable</a>
 							<a href="collective.html">Collective</a>
-							<a href="contact.html" class="selected">Contact</a>
+							<a href="contact.html">Contact</a>
 						</nav>
-				
-					<form action="contact.php" method="post">
-    		<div>
-        		<label for="name">Name:</label>
-        		<input type="text" id="name" />
-    		</div>
-    			<div>
-        			<label for="mail">E-mail:</label>
-        			<input type="email" id="mail" />
-    			</div>
-				    <div>
-				        <label for="msg">Message:</label>
-				        <textarea id="msg"></textarea>
-				    </div>
-				    
-				    <div class="button">
-				        <button type="submit">Send</button>
-				    </div>
-				</form>
-					
-				
+						
 
-					<div class="clear-fix"></div>		
-				
-				<hr class="top">
+						<p class="listen">Want to apply for a show or get in contact? 
+							<br>Use the form below.</p>
+					
+					<form name="contactform" method="post" action="send_form_email.php">
+ 
+					<table width="450px">
+ 
+						<tr>
+ 
+					 <td valign="top">
+					 
+					  <label for="first_name"> Name *</label>
+					 
+					 </td>
+					 
+					 <td valign="top">
+					 
+					  <input  type="text" name="first_name" maxlength="50" size="30">
+					 
+					 </td>
+					 
+					</tr>
+					 
+
+					 
+					<tr>
+					 
+					 <td valign="top">
+					 
+					  <label for="email">Email *</label>
+					 
+					 </td>
+					 
+					 <td valign="top">
+					 
+					  <input  type="text" name="email" maxlength="80" size="30">
+					 
+					 </td>
+					 
+					</tr>
+					 
+
+					 
+					<tr>
+					 
+					 <td valign="top">
+					 
+					  <label for="comments">Message *</label>
+					 
+					 </td>
+					 
+					 <td valign="top">
+					 
+					  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+					 
+					 </td>
+					 
+					</tr>
+					 
+					<tr>
+					 <td valign="top">
+					 <td colspan="2" style="">
+					 
+					  <input type="submit" value="Submit" style=" border-radius: 5px;
+					    border: 0;
+					    width: 80px;
+					    height:25px;
+					    font-family: Tahoma;
+					    background: #f4f4f4;">   
+					 
+					 </td>
+					 
+					</tr>
+					 
+					</table>
+					 
+					</form>
+
+
+
+						<hr class="top">
 
 		<footer>
 			<a href="http://twitter.com"><img src="./images/twitter.png" alt="twitter" class="social-icon"></a>
     	<a href="http://facebook.com"><img src="./images/facebook.png" alt="Facebook" class="social-icon"></a>
-			<p>&#169; 2015 AuxiliaryFm.com - Processed Beats</p>
+			<p>&#169; 2015 AuxiliaryFm.com</p>
 		</footer>
 
 		</div>
 
 		
-
 	</body>
 </html>
 

@@ -7,9 +7,9 @@ body {
 
 }
 header {
-	background: url(../images/banner.jpg) no-repeat right 0px;
-	margin-bottom: 0px;
+	background:  url(../images/banner.jpg) no-repeat center 0px;
 	height: 160px;
+
 }
 
 h1{
@@ -23,6 +23,7 @@ h2 {
 
 nav{
 	
+	margin-top: 0px;
 	position: static;
 	padding: 10px 0px 10px 0px;
 	background-color: #000704;
@@ -97,8 +98,18 @@ article {
 }
 
 
+form {
+	width: 100%;
+}
 
+hr.top  {
+	width: 100%;
+}
 
+footer {
+	width: 100%;
+	text-align: center;
+}
 @media
 	only screen and (-webkit-min-device-pixel-ratio: 2),
 	only screen and (min--moz-device-pixel-ratio: 2),
